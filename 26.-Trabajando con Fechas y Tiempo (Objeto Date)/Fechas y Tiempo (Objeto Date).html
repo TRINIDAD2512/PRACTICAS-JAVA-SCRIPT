@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fechas y Tiempo (Objeto Date)</title>
+</head>
+<body>
+    <script>
+        (function(){
+            alert("SE EJECUTA CON EL CONSOLE DEL NAVEGADOR")
+            var fecha = new Date();
+            document.write(fecha);
+
+            console. log(fecha.getHours() - 12);
+            console.log(fecha. getmi);
+            console.log(fecha.getSeconds);
+
+            var semana = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
+            console.log(fecha.getDay());
+            console.log(fecha.getDate());
+            console.log(fecha.getMonth());
+            console.log(fecha.getUTCFullYear());
+
+        }())
+    </script>
+    
+</body>
+</html>

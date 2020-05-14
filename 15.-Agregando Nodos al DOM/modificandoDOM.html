@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregando Nodos al DOM</title>
+</head>
+<body>
+    <ol id="lista">
+        <li>
+            Al guacamayo ara Macao le gusta las zonas llanas y bajas, anidando en árboles frondosos de las áreas más cálidas. 
+            Actualmente, se encuentra en peligro de extinción, debido, entre otras cosas, a la acción del hombre.
+        </li>
+        
+        <li>
+            Original del sur de América, se trata de una especie que destaca por la intensidad de los colores de sus plumas, así como su apariencia exótica. Su hábitat natural se 
+            sitúa en las sabanas y bosques de altitudes que no superan los 1.500 metros sobre el nivel del mar.
+        </li>
+
+    </ol>
+    <script>
+        var elemento = document.createElement("li");
+            contenido = document.createTextNode("NUEVO TEXTO");
+        elemento.appendChild(contenido);
+
+        var padre = document.getElementsByTagName("li")[0].parentNode,
+        primerElemento = document.getElementsByTagName("li")[1];
+        padre.insertBefore(elemento, primerElemento);
+    </script>
+</body>
+</html>

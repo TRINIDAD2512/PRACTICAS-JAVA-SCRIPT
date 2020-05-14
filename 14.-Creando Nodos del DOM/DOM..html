@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h1 id="titulo">Guacamaya Roja</h1>
+    <div id="subtitulo"></div>
+    <p>1.-Guacamaya roja -también conocido como <b>Macao</b> - es una especie integrada en la familia de los loros.</p> 
+    
+    <p id="segundo">2.-Original del sur de América, se trata de una especie que destaca por la intensidad de los 
+      colores de sus plumas, así como su apariencia exótica. Su hábitat natural se sitúa en las
+      sabanas y bosques de altitudes que no superan los 1.500 metros sobre el nivel del mar.</p>
+
+     <p>3.-Al guacamayo ara Macao le gusta las zonas llanas y bajas, anidando en árboles frondosos
+        de las áreas más cálidas. Actualmente, se encuentra en peligro de extinción, debido, entre otras cosas, a la acción del hombre.</p>
+       
+       <script>
+           var elmentosP=document.getElementsByTagName("p");
+           var segundoParrafo = document.getElementById("segundo");
+           
+           //1.- crear el elemento
+           var elemento= document.createElement("h2");
+           //2.- crear un modo de texto
+           var contenido = document.createTextNode("ESTE ES NUESTRO TITULAR");
+           //3.- añadir el nodo de texto al elemento
+           elemento.appendChild(contenido);
+           //4.- agregar atributos al elemento
+           elemento.setAttribute("align", "center");
+           //5.- agregar el elementoal documento 
+           document.getElementById("subtitulo").appendChild(elemento);
+
+
+       </script> 
+</body>
+</html>
